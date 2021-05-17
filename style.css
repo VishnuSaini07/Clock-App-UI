@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(255, 251, 0), rgb(255, 125, 18));
+  height: 100vh;
+}
+
+.phone {
+  width: 280px;
+  height: 550px;
+  background: linear-gradient(75deg, #f5f4f4 65%, #faf7f7 60%);  
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+
+.layer1 {
+  width: 280px;
+  height: 550px;
+  border: 7px solid #E2E4E3;
+  border-radius: 30px;
+  box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 270px;
+  height: 540px;
+  border: 12px solid #fff;
+  border-radius: 30px;
+}
+
+.layer2::before{
+  content: '';
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0px 0.5px 0.6px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 .line1 {
+  width: 50px;
+  height: 5px;
+  background: #E2E4E3;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 .line1::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline;
+  position: absolute;
+  background: #E2E4E3;
+  top: -1px;
+  left: 60px;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  width: 25px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -5%;
+  top: 15%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.volume-button-plus {
+  width: 40px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -7.5%;
+  top: 27%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.volume-button-minus {
+  width: 40px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -7.5%;
+  top: 37%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.power-button {
+  width: 70px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  right: -13%;
+  top: 30%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 17px 17px;
+  letter-spacing: 0.5px;
+}
+
+header p i {
+  font-size: 23px;
+  color: #C9C9C9;
+}
+
+.watch {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  box-shadow:  5px 5px 6px #ebebeb,
+               -5px -5px 6px #ffffff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watch .center {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.watch .line2 {
+  width: 70px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.watch .line2::after {
+  content: '';
+  width: 70px;
+  height: 3px;
+  background: #ffb302;
+  position: absolute;
+  top: -650%;
+  left: 18%;
+  transform: translate(-50%, -50%) rotateZ(90deg);
+}
+
+.time1 {
+  width: 195px;
+  height: 30px;
+  border-radius: 63px;
+  background: #f5f5f5;
+  box-shadow:  3px 5px 2px #dddddd,
+              -3px -5px 2px #ffffff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-bottom: 50px;
+}
+
+.time2 {
+  width: 195px;
+  height: 30px;
+  border-radius: 63px;
+  background: #f5f5f5;
+  box-shadow:  3px 5px 2px #dddddd,
+              -3px -5px 2px #ffffff;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-bottom: 50px;
+}
+
+.time1 p,
+.time2 p {
+  font-size: 12px;
+  margin: 5px 15px;
+  font-weight: 600;
+}
+
+.time1 p sup,
+.time2 p sup {
+  margin-left: 5px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.time1 .checkbox,
+.time2 .checkbox {
+  width: 45px;
+  height: 20px;
+  background: #ffb302;
+  border-radius: 63px;
+  box-shadow:  3px 5px 2px #dddddd,
+              -3px -5px 2px #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.time1 .checkbox::after,
+.time2 .checkbox::after {
+  content: '';
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: -100px;
+}
+
+.options .option i {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow:  3px 3px 2px #dddddd,
+              -3px -3px 2px #ffffff;
+  color: #ffb302;
+  cursor: pointer;
+}
+
+.options .option .fa-alarm-clock {
+  color: #fff;
+  background: #ffb302;
+}
